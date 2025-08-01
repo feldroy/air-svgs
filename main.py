@@ -1,5 +1,6 @@
 import air
 from air_markdown import Markdown
+from svgs import AirLogo
 from fastapi import HTTPException
 from fastapi import FastAPI
 from pathlib import Path
@@ -45,6 +46,10 @@ def index():
                 download=True,
             ),
         ),
+
+        air.H2("Here it is rendered from an Air Tag"),
+        AirLogo(),
+
         footer()
     )
 
