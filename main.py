@@ -1,6 +1,6 @@
 import air
 from air_markdown import Markdown
-from svgs import AirLogo
+from svgs import Air1ColorLogo, Air3ColorLogo
 from fastapi import HTTPException
 from fastapi import FastAPI
 from pathlib import Path
@@ -58,8 +58,11 @@ def index():
             ),
         ),
 
+        air.H2("1-color logo rendered from an Air Tag"),
+        Air1ColorLogo(),
+
         air.H2("3-color logo rendered from an Air Tag"),
-        AirLogo(),
+        Air3ColorLogo(),
 
         air.H2("Need Other SVGs?"),
         air.P(

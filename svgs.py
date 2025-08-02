@@ -1,11 +1,26 @@
-import air
+import air.svg as s
 
 
-def AirLogo():
-    return air.svg.Svg(
-        air.svg.Defs(id="defs1"),
-        air.svg.G(
-            air.svg.Path(
+def Air1ColorLogo():
+    return s.Svg(
+        s.Defs(id="defs1"),
+        s.G(
+            s.Path(
+                id="path1",
+                style="opacity:1;fill:#7c5235;fill-opacity:1;stroke-width:0.8604",
+                d="""m 215.95273,196.22031 c -16.52007,-0.8367 -37.84437,-2.29326 -43.51093,12.81758 
+-7.04185,18.7783 3.77739,28.60264 11.33281,30.76133 7.55542,2.15869 7.55547,-7.55547 7.55547,-7.55547
+""",
+            )
+        )
+    )
+
+
+def Air3ColorLogo():
+    return s.Svg(
+        s.Defs(id="defs1"),
+        s.G(
+            s.Path(
                 id="path5",
                 style="opacity:1;fill:#7c5235;fill-opacity:1;stroke-width:0.8604",
                 d="""m 215.95273,196.22031 c -16.52007,-0.8367 -37.84437,-2.29326 -43.51093,12.81758 
@@ -62,8 +77,8 @@ def AirLogo():
         style="display:inline",
         transform="translate(-80.681533,-188.54407)",
     ),
-    air.svg.G(
-        air.svg.Path(
+    s.G(
+        s.Path(
             id="path1",
             style="opacity:1;fill:#ffae2a;fill-opacity:1;stroke-width:0.8604",
             d="""m 211.15273,193.02031 c -16.52007,-0.8367 -37.84437,-2.29326 -43.51093,12.81758 
@@ -120,8 +135,8 @@ def AirLogo():
         style="display:inline",
         transform="translate(-80.681533,-188.54407)",
     ),
-    air.svg.G(
-        air.svg.Path(
+    s.G(
+        s.Path(
             id="path4",
             style="opacity:1;fill:#1cb9cc;fill-opacity:1;stroke-width:0.8604",
             d="""m 205.95273,189.02031 c -16.52007,-0.8367 -37.84437,-2.29326 -43.51093,12.81758 
