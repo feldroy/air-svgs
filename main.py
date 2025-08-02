@@ -37,7 +37,18 @@ def index():
         air.H1("Air SVGs"),
         air.P("This page contains the Air logo (and more soon) in SVG format."),
         
-        air.Img(src="/static/air-3color.svg", alt="Air Logo", width=200, height=200),
+        air.H2("1-Color"),
+        air.Img(src="/static/air-neon.svg", alt="Air Logo in 1 color", width=200, height=200),
+        air.Div(
+            air.A(
+                "Download SVG",
+                href="/static/air-neon.svg",
+                download=True,
+            ),
+        ),
+
+        air.H2("3-Color"),
+        air.Img(src="/static/air-3color.svg", alt="Air Logo in 3 colors", width=200, height=200),
 
         air.Div(
             air.A(
@@ -47,9 +58,15 @@ def index():
             ),
         ),
 
-        air.H2("Here it is rendered from an Air Tag"),
+        air.H2("3-color logo rendered from an Air Tag"),
         AirLogo(),
 
+        air.H2("Need Other SVGs?"),
+        air.P(
+            air.Span("If you need other variations for a particular use case you have in mind: "),
+            air.A("Open an issue with details", href="https://github.com/feldroy/air-svgs/issues/new"),
+            air.Span(" and we'll see what we can do.")
+        ),
         footer()
     )
 
