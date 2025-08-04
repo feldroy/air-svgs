@@ -38,10 +38,16 @@ def index():
         air.P("This page contains the Air logo (and more soon) in SVG format."),
         
         air.H2("1-Color"),
-        air.Img(src="/static/air-neon.svg", alt="Air Logo in 1 color", width=200, height=200),
+        air.Img(src="/static/air-deep-sky-blue.svg", alt="Air Logo in 1 color (Deep Sky Blue)", width=200, height=200),
         air.Div(
             air.A(
-                "Download SVG",
+                "Download SVG (Deep Sky Blue)",
+                href="/static/air-deep-sky-blue.svg",
+                download=True,
+            ),
+            air.Span(" | "),
+            air.A(
+                "Download SVG (Neon)",
                 href="/static/air-neon.svg",
                 download=True,
             ),
