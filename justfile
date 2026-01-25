@@ -50,3 +50,7 @@ test *ARGS:
 pdb *ARGS:
     @echo "Running with arg: {{ARGS}}"
     uv run --python={{PY_VERSION}} --isolated --group test -- pytest --pdb --maxfail=10 {{ARGS}}
+
+# Deploy to FastAPI Cloud
+deploy:
+    uv run fastapi deploy
